@@ -1,147 +1,132 @@
-import { NavBar } from "@/components/nav-bar";
-import { NewsCard } from "@/components/news-card";
-import { LatestNewsCard } from "@/components/latest-news-card";
-import { NewsCategories } from "@/components/news-categories";
 import { Footer } from "@/components/footer";
-import { ParallaxHero } from "@/components/parallex-hero";
+import { NavBar } from "@/components/nav-bar";
+import { UrduLatestNewsCard } from "@/components/urdu/urdu-latest-news";
+import { UrduNewsCard } from "@/components/urdu/urdu-new-card";
+import { UrduNewsCategories } from "@/components/urdu/urdu-news-categories";
+import { UrduParallaxHero } from "@/components/urdu/urdu-parallex-hero";
 
-export default function Home() {
+export default function UrduHome() {
   const newsItems = [
     {
-      category: "ICC World Test Championship",
+      category: "آئی سی سی ورلڈ ٹیسٹ چیمپئن شپ",
       title:
-        "Broad shines with favourite Test ton as England top Day 1 in Wellington",
+        "ویلنگٹن میں پہلے دن انگلینڈ کی برتری کے ساتھ براڈ کا پسندیدہ ٹیسٹ سنچری",
       imageUrl:
         "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=1024x1024&w=is&k=20&c=fZi9_l3-fcMPHTEDVinuavkZnG9zh_bkX8lWjKVJsf4=",
-      href: "/news/1",
+      href: "/urdu/news/1",
     },
     {
-      category: "ICC World Test Championship",
-      title: "RSA century highlights South Africa fight in trying conditions",
+      category: "آئی سی سی ورلڈ ٹیسٹ چیمپئن شپ",
+      title:
+        "مشکل حالات میں جنوبی افریقہ کی جدوجہد میں آر ایس اے کی سنچری نمایاں",
       imageUrl:
         "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=1024x1024&w=is&k=20&c=fZi9_l3-fcMPHTEDVinuavkZnG9zh_bkX8lWjKVJsf4=",
-      href: "/news/2",
+      href: "/urdu/news/2",
     },
     {
-      category: "News",
-      title: "Former Australia batter named new Italy T20I captain",
+      category: "خبریں",
+      title: "سابق آسٹریلیائی بلے باز اٹلی ٹی20 کپتان مقرر",
       imageUrl:
         "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=1024x1024&w=is&k=20&c=fZi9_l3-fcMPHTEDVinuavkZnG9zh_bkX8lWjKVJsf4=",
-      href: "/news/3",
+      href: "/urdu/news/3",
     },
     {
-      category: "News",
-      title: "ICC Chair Jay Shah visits Dubai headquarters",
+      category: "خبریں",
+      title: "آئی سی سی چیئرمین جے شاہ کا دبئی ہیڈکوارٹر کا دورہ",
       imageUrl:
         "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=1024x1024&w=is&k=20&c=fZi9_l3-fcMPHTEDVinuavkZnG9zh_bkX8lWjKVJsf4=",
-      href: "/news/4",
+      href: "/urdu/news/4",
     },
     {
-      category: "News",
-      title: "Injuries to key players force team into squad re-shuffle",
+      category: "خبریں",
+      title: "اہم کھلاڑیوں کی چوٹوں کے باعث ٹیم میں ردوبدل",
       imageUrl:
         "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=1024x1024&w=is&k=20&c=fZi9_l3-fcMPHTEDVinuavkZnG9zh_bkX8lWjKVJsf4=",
-      href: "/news/5",
+      href: "/urdu/news/5",
     },
   ];
 
   const latestNews = [
     {
       title:
-        "Fakhar Zaman Disheartened by PCB's Treatment Amid Uncertainty Over Future",
-      timestamp: "3:25 pm | Dec 6, 2024",
+        "پی سی بی کے رویے سے فخر زمان مایوس، مستقبل کے بارے میں غیر یقینی صورتحال",
+      timestamp: "3:25 بجے | 6 دسمبر، 2024",
       imageUrl:
         "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=1024x1024&w=is&k=20&c=fZi9_l3-fcMPHTEDVinuavkZnG9zh_bkX8lWjKVJsf4=",
-      href: "/news/latest-1",
-    },
-    {
-      title: "Sufiyan Muqeem Joins Elite Company After Zimbabwe Series",
-      timestamp: "2:55 pm | Dec 6, 2024",
-      imageUrl:
-        "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=1024x1024&w=is&k=20&c=fZi9_l3-fcMPHTEDVinuavkZnG9zh_bkX8lWjKVJsf4=",
-      href: "/news/latest-2",
+      href: "/urdu/news/latest-1",
     },
     {
       title:
-        "Incoming CA Chief Urges Tough Decisions for Australia's Ageing Test Team",
-      timestamp: "2:04 pm | Dec 6, 2024",
+        "زمبابوے سیریز کے بعد سفیان مقیم نے نامور کھلاڑیوں کی صف میں جگہ بنا لی",
+      timestamp: "2:55 بجے | 6 دسمبر، 2024",
       imageUrl:
         "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=1024x1024&w=is&k=20&c=fZi9_l3-fcMPHTEDVinuavkZnG9zh_bkX8lWjKVJsf4=",
-      href: "/news/latest-3",
-    },
-    {
-      title: "ICC Reportedly Ready to Announce the Champions Trophy Schedule",
-      timestamp: "12:13 pm | Dec 6, 2024",
-      imageUrl:
-        "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=1024x1024&w=is&k=20&c=fZi9_l3-fcMPHTEDVinuavkZnG9zh_bkX8lWjKVJsf4=",
-      href: "/news/latest-4",
-    },
-    {
-      title: "Former Australian Cricketer Named Italy Captain",
-      timestamp: "12:08 pm | Dec 6, 2024",
-      imageUrl:
-        "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=1024x1024&w=is&k=20&c=fZi9_l3-fcMPHTEDVinuavkZnG9zh_bkX8lWjKVJsf4=",
-      href: "/news/latest-5",
+      href: "/urdu/news/latest-2",
     },
     {
       title:
-        "Former Cricketer Slams Salman Ali Agha's Captaincy After Zimbabwe",
-      timestamp: "11:34 pm | Dec 6, 2024",
+        "آسٹریلیا کے عمر رسیدہ ٹیسٹ ٹیم کے لیے سی اے کے نئے سربراہ کا سخت فیصلوں کا مطالبہ",
+      timestamp: "2:04 بجے | 6 دسمبر، 2024",
       imageUrl:
         "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=1024x1024&w=is&k=20&c=fZi9_l3-fcMPHTEDVinuavkZnG9zh_bkX8lWjKVJsf4=",
-      href: "/news/latest-6",
+      href: "/urdu/news/latest-3",
+    },
+    {
+      title: "آئی سی سی چیمپئنز ٹرافی کا شیڈول جلد جاری کرنے کی خبر",
+      timestamp: "12:13 بجے | 6 دسمبر، 2024",
+      imageUrl:
+        "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=1024x1024&w=is&k=20&c=fZi9_l3-fcMPHTEDVinuavkZnG9zh_bkX8lWjKVJsf4=",
+      href: "/urdu/news/latest-4",
+    },
+    {
+      title: "سابق آسٹریلیائی کرکٹر اٹلی کا کپتان مقرر",
+      timestamp: "12:08 بجے | 6 دسمبر، 2024",
+      imageUrl:
+        "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=1024x1024&w=is&k=20&c=fZi9_l3-fcMPHTEDVinuavkZnG9zh_bkX8lWjKVJsf4=",
+      href: "/urdu/news/latest-5",
+    },
+    {
+      title: "زمبابوے کے بعد سابق کرکٹر کی سلمان علی آغا کی کپتانی پر تنقید",
+      timestamp: "11:34 بجے | 6 دسمبر، 2024",
+      imageUrl:
+        "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=1024x1024&w=is&k=20&c=fZi9_l3-fcMPHTEDVinuavkZnG9zh_bkX8lWjKVJsf4=",
+      href: "/urdu/news/latest-6",
     },
     {
       title:
-        "PCB Announces Free Entry for Champions T20 Cup Matches in Karachi",
-      timestamp: "10:34 am | Dec 6, 2024",
+        "پی سی بی کا کراچی میں چیمپئنز ٹی20 کپ میچز کے لیے مفت داخلے کا اعلان",
+      timestamp: "10:34 بجے | 6 دسمبر، 2024",
       imageUrl:
         "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=1024x1024&w=is&k=20&c=fZi9_l3-fcMPHTEDVinuavkZnG9zh_bkX8lWjKVJsf4=",
-      href: "/news/latest-7",
+      href: "/urdu/news/latest-7",
     },
     {
-      title: "PCB Faces Backlash Over Unpaid Salaries to Women's Cricket Team",
-      timestamp: "10:14 am | Dec 6, 2024",
+      title:
+        "خواتین کرکٹ ٹیم کی تنخواہوں کی عدم ادائیگی پر پی سی بی کو تنقید کا سامنا",
+      timestamp: "10:14 بجے | 6 دسمبر، 2024",
       imageUrl:
         "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=1024x1024&w=is&k=20&c=fZi9_l3-fcMPHTEDVinuavkZnG9zh_bkX8lWjKVJsf4=",
-      href: "/news/latest-8",
+      href: "/urdu/news/latest-8",
     },
   ];
 
   return (
-    <main>
-      <NavBar />
+    <main className="rtl">
+      <NavBar urdu={true} />
       {/* Blue background section */}
-      {/* <div className="bg-[#001B39]">
+      <div className="bg-[#001B39]">
         <div className="relative">
-          <ParallaxHero
+          <UrduParallaxHero
             imageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Football_in_Bloomington%2C_Indiana%2C_1995.jpg/2560px-Football_in_Bloomington%2C_Indiana%2C_1995.jpg"
-            title="LIVE: Labuschagne-McSweeney provide Australia with added cushion on Day 1"
-            subtitle="ICC World Test Championship"
+            title="براہ راست: لابوشین-میکسوینی نے آسٹریلیا کو پہلے دن اضافی برتری فراہم کی"
+            subtitle="آئی سی سی ورلڈ ٹیسٹ چیمپئن شپ"
           />
 
-          <div className="relative z-10 -mt-32 overflow-x-auto pb-8 -mx-4 px-8 custom-scrollbar">
+          {/* News Cards Grid */}
+          <div className="relative z-10 -mt-32 overflow-x-auto pb-8 custom-scrollbar">
             <div className="flex space-x-4 w-max px-4">
               {newsItems.map((item, index) => (
-                <NewsCard key={index} {...item} />
-              ))}
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      <div className="bg-[#001B39] overflow-x-hidden">
-        <div className="relative">
-          <ParallaxHero
-            imageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Football_in_Bloomington%2C_Indiana%2C_1995.jpg/2560px-Football_in_Bloomington%2C_Indiana%2C_1995.jpg"
-            title="LIVE: Labuschagne-McSweeney provide Australia with added cushion on Day 1"
-            subtitle="ICC World Test Championship"
-          />
-
-          <div className="relative z-10 -mt-32 overflow-x-auto pb-8 px-4 custom-scrollbar">
-            <div className="flex space-x-4 w-full max-w-screen px-4">
-              {newsItems.map((item, index) => (
-                <NewsCard key={index} {...item} />
+                <UrduNewsCard key={index} {...item} />
               ))}
             </div>
           </div>
@@ -154,14 +139,14 @@ export default function Home() {
         <div className="py-16">
           <div className="max-w-7xl mx-auto px-4">
             <div className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 relative inline-block">
-                Latest News
-                <div className="absolute -bottom-2 left-0 w-full h-1 bg-blue-600" />
+              <h2 className="text-2xl font-bold text-gray-900 relative inline-block text-right w-full ">
+                تازہ ترین خبریں
+                <div className="absolute -bottom-2 right-0 w-full h-1 bg-blue-600" />
               </h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {latestNews.map((news, index) => (
-                <LatestNewsCard key={index} {...news} />
+                <UrduLatestNewsCard key={index} {...news} />
               ))}
             </div>
           </div>
@@ -169,11 +154,11 @@ export default function Home() {
 
         {/* News Categories Section */}
         <div className="py-16 bg-gray-50">
-          <NewsCategories />
+          <UrduNewsCategories />
         </div>
       </div>
 
-      <Footer />
+      <Footer urdu={true} />
     </main>
   );
 }

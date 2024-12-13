@@ -1,19 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 
-interface LatestNewsCardProps {
+interface UrduLatestNewsCardProps {
   title: string;
   imageUrl: string;
   timestamp: string;
   href: string;
 }
 
-export function LatestNewsCard({
+export function UrduLatestNewsCard({
   title,
   imageUrl,
   timestamp,
   href,
-}: LatestNewsCardProps) {
+}: UrduLatestNewsCardProps) {
   return (
     <Link
       href={href}
@@ -27,7 +27,7 @@ export function LatestNewsCard({
           className="object-cover transition-transform duration-200 group-hover:scale-105"
         />
       </div>
-      <div className="p-4 space-y-2">
+      <div className="p-4 space-y-2 text-right">
         <time className="text-sm text-blue-600 font-medium">{timestamp}</time>
         <h3 className="font-bold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors line-clamp-2">
           {title}

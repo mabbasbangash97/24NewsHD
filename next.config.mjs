@@ -4,11 +4,15 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'upload.wikimedia.org',
+                hostname: 'media.istockphoto.com',
             },
             {
                 protocol:'https',
                 hostname:'24newshd.tv'
+            },
+            {
+                protocol:'https',
+                hostname:'upload.wikimedia.org'
             }
         ],
     },
