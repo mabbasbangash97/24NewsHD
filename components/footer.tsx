@@ -10,34 +10,34 @@ export function Footer() {
             <Link href="/" className="flex items-center">
               <Image
                 src="https://24newshd.tv/uploads/theme/logo-1580807238.png"
-                alt="24NewsHD"
-                width={60}
-                height={30}
+                alt="ICC Logo"
+                width={100}
+                height={100}
                 className="h-8 w-auto"
               />
             </Link>
           </div>
           <nav className="flex flex-wrap justify-center md:justify-end gap-6">
             <Link
-              href="#"
+              href="/about"
               className="text-gray-300 hover:text-white transition-colors"
             >
               About
             </Link>
             <Link
-              href="#"
+              href="/contact"
               className="text-gray-300 hover:text-white transition-colors"
             >
               Contact
             </Link>
             <Link
-              href="#"
+              href="/privacy"
               className="text-gray-300 hover:text-white transition-colors"
             >
               Privacy Policy
             </Link>
             <Link
-              href="#"
+              href="/terms"
               className="text-gray-300 hover:text-white transition-colors"
             >
               Terms of Use

@@ -3,32 +3,33 @@ import Link from "next/link";
 
 interface LatestNewsCardProps {
   title: string;
-  imageUrl?: string;
+  imageUrl: string;
   timestamp: string;
   href: string;
 }
 
 export function LatestNewsCard({
   title,
-  //   imageUrl,
+  imageUrl,
   timestamp,
   href,
 }: LatestNewsCardProps) {
   return (
-    <Link href={href} className="group block">
-      <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-3">
+    <Link
+      href={href}
+      className="group block bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
+    >
+      <div className="relative aspect-[4/3] rounded-t-lg overflow-hidden">
         <Image
-          src={
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Googleplex_HQ_%28cropped%29.jpg/640px-Googleplex_HQ_%28cropped%29.jpg"
-          }
+          src={imageUrl}
           alt={title}
           fill
-          className="object-cover transition-transform group-hover:scale-105"
+          className="object-cover transition-transform duration-200 group-hover:scale-105"
         />
       </div>
-      <div className="space-y-2">
-        <time className="text-sm text-blue-300">{timestamp}</time>
-        <h3 className="font-bold text-white leading-tight group-hover:text-blue-300 transition-colors">
+      <div className="p-4 space-y-2">
+        <time className="text-sm text-blue-600 font-medium">{timestamp}</time>
+        <h3 className="font-bold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors line-clamp-2">
           {title}
         </h3>
       </div>
