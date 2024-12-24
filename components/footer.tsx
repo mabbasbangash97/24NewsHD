@@ -27,25 +27,25 @@ export function Footer({ urdu }: FooterProps) {
                 </div>
                 <nav className="flex flex-wrap justify-center md:justify-start gap-6">
                   <Link
-                    href="/urdu/about"
+                    href="#"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     ہمارے بارے میں
                   </Link>
                   <Link
-                    href="/urdu/contact"
+                    href="#"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     رابطہ
                   </Link>
                   <Link
-                    href="/urdu/privacy"
+                    href="#"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     رازداری کی پالیسی
                   </Link>
                   <Link
-                    href="/urdu/terms"
+                    href="#"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     استعمال کی شرائط
@@ -77,25 +77,25 @@ export function Footer({ urdu }: FooterProps) {
                 </div>
                 <nav className="flex flex-wrap justify-center md:justify-end gap-6">
                   <Link
-                    href="/about"
+                    href="#"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     About
                   </Link>
                   <Link
-                    href="/contact"
+                    href="#"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     Contact
                   </Link>
                   <Link
-                    href="/privacy"
+                    href="#"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     Privacy Policy
                   </Link>
                   <Link
-                    href="/terms"
+                    href="#"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     Terms of Use
