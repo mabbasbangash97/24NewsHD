@@ -158,7 +158,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="mb-8">
               <h2 className="text-2xl font-bold text-gray-900 relative inline-block">
-                Latest News (Testing Orange Pro AI v3)
+                Latest News (Testing Orange Pro AI v4)
                 <div className="absolute -bottom-2 left-0 w-full h-1 bg-blue-600" />
               </h2>
             </div>
