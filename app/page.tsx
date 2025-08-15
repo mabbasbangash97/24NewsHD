@@ -8,6 +8,14 @@ import { ParallaxHero } from "@/components/parallex-hero";
 export default function Home() {
   const newsItems = [
     {
+      category: "OPRO Github Test",
+      title:
+        "Lorem ipsum sit amet ",
+      imageUrl:
+        "https://app.orangepro.ai/",
+      href: "#",
+    },
+    {
       category: "ICC World Test Championship",
       title:
         "Broad shines with favourite Test ton as England top Day 1 in Wellington",
