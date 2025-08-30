@@ -10,7 +10,7 @@ export default function Home() {
     {
       category: "ICC World Test Championship",
       title:
-        "Broad shines with favourite Test ton as England top Day 1 in Wellington",
+        "Broad shines with favourite Test ton as England top Day 1 in Wellington page check",
       imageUrl:
         "https://media.newyorker.com/photos/5d323dcb58d95300082987d3/master/pass/SundayReading-Primary.jpg",
       href: "#",
