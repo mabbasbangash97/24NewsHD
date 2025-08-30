@@ -8,7 +8,7 @@ import { ParallaxHero } from "@/components/parallex-hero";
 export default function Home() {
   const newsItems = [
     {
-      category: "ICC World Test Championship tst etst checks ui github run actions ",
+      category: "ICC World Test Championship tst etst checks ui github run actions testtttt ",
       title:
         "Broad shines with favourite Test ton as England top Day 1 in Wellington",
       imageUrl:
