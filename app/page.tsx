@@ -132,7 +132,7 @@ export default function Home() {
   return (
     <main>
       <NavBar />
-
+      <p>Generic Issues Fetch for private and pubic issues as well as github issues with Orange Pro AI v11</p>
       <div className="bg-[#001B39] overflow-x-hidden">
         <div className="relative">
           <ParallaxHero
