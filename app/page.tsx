@@ -132,7 +132,7 @@ export default function Home() {
   return (
     <main>
       <NavBar />
-
+      <p>ORANGE PRO JIRA INTEGRATION</p>
       <div className="bg-[#001B39] overflow-x-hidden">
         <div className="relative">
           <ParallaxHero
